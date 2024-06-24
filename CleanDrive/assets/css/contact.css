@@ -1,0 +1,139 @@
+.container {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+
+.formulario {
+    padding:70px;
+    width: 400px;
+    height: 600px;
+    background-color: #fff;
+    border: 3px solid rgba(44, 52, 73, 1) ;
+    border-radius: 10px;
+}
+
+.number {
+    width: 70%; 
+    margin-top: 10px; 
+    text-align: center; 
+}
+
+.number h2 {
+    margin-bottom: 10px; 
+}
+
+.number ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.number li {
+    margin-bottom: 5px; 
+}
+h2 {
+    color: rgba(44, 52, 73, 1);
+    font-size: 30px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+label {
+    font-size: 18px;
+    color: rgba(44, 52, 73, 1);
+}
+
+input {
+    padding: 10px;
+    width: 100%;
+    height: 25px;
+    border: 2px solid #bed0ff;
+    background-color: #cbdaff;
+    border-radius: 8px;
+}
+
+button {
+    font-family: 700;
+    font-size: 18px;
+    margin-top: 18px;
+    width: 100%;
+    height: 30px;
+    background-color: #2c3449;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+}
+
+textarea {
+    border: 2px solid #bed0ff;
+    background-color: #cbdaff;
+}
+
+
+aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+@media (max-width: 768px) {
+    .number {
+        margin-top: 15px; /* Espaçamento menor para telas menores */
+    }
+}
+
+@media (max-width: 480px) {
+    .number {
+        margin-top: 25px; /* Espaçamento ainda menor para telas muito pequenas */
+    }
+}
+/* Media query para telas menores que 768px */
+@media (max-width: 768px) {
+    .formulario {
+        width: 50%; 
+        padding: 70px;
+        height: auto; 
+    }
+
+    h2 {
+        font-size: 12px; 
+    }
+
+    label, input, button, textarea {
+        font-size: 16px; 
+    }
+}
+
+
+@media (max-width: 480px) {
+    h2 {
+        font-size: 25px; 
+    }
+
+    .formulario {
+        padding: 15px; 
+    }
+
+ 
+}
+.container {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}

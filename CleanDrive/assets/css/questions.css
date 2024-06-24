@@ -1,0 +1,35 @@
+main {
+    height: auto;
+    min-height: 74vh;
+}
+
+.faq {
+    width: 74rem;
+    height: fit-content;
+    margin: 3rem auto 6rem auto;
+    text-align:left;
+    background-color: #E0E9FF ;
+}
+h1 {
+    color: #040028;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+.faq-question {
+    color: #040028;
+    margin: 1rem auto 1rem 2rem;
+    cursor: pointer;
+}
+
+.faq-question:hover {
+    transform: scale(1.05); 
+    transition: transform 0.3s ease;
+}
+
+.faq-answer {
+    display: none;
+    margin: 1rem 2rem;
+    text-align: left;
+}

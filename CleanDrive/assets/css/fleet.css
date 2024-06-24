@@ -1,0 +1,176 @@
+.container {
+    background-color: #FFFFFF;
+    padding: 20px;
+    width: 100%;
+}
+
+/* Estilos para o título */
+.container h2 {
+    text-align: center;
+    font-size: 40px;
+    color: #2c3449;
+    margin-bottom: 20px;
+}
+
+/* Estilos para o formulário de filtro */
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100px;
+    background-color: #2c3449;
+}
+
+.form-group label {
+    margin-top: 10px;
+    color: #fff;
+    margin-bottom: 30px;
+    display: block;
+}
+
+.form-group select,
+.form-group input[type="text"],
+.form-group input[type="datetime-local"] {
+    width: 80%;
+    margin-right: 100px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.form-group button {
+    font-family: 700;
+    font-size: 18px;
+    margin-top: 32px;
+    width: 8%;
+    height: 35px;
+    border-radius: 8px;
+    background-color:  #A9E4AE;
+    color: #2c3449;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-group button:hover {
+    background-color: #bed0ff;
+
+}
+
+.card-section {
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    height: auto;
+    margin: 1% 13%;
+}
+
+
+.card {
+    width: 20%;
+    height: auto;
+    background-color: #A9E4AE;
+    margin: 2rem 2rem;
+    border-radius: 10px; 
+    box-shadow: 1px 1px 8px 0px rgba(0,0,0,0.31);
+}
+
+.card:hover {
+    background-color: #edfff1;
+    box-shadow: 1px 1px 12px 0px rgba(0,0,0,0.5);
+    transition: 0.5;
+}
+
+
+.card h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2c3449;
+    text-align: center;
+    font-size: 20px;
+    height: 5vh;
+    font-weight: 700; 
+    margin: 5% 5%;
+}
+
+.card-img {
+    width: 80%;
+    height: 33vh;
+    margin-top: 1%;
+    max-width: 100%;
+    max-height: 33vh;
+}
+
+.card-img .main-img{
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+    margin-left: 5%;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 5%;
+    width: auto;
+    height: 4vh;
+    border-bottom: 2px solid #2c3449;
+}
+
+.card-icons .icons {
+    display: flex;
+    justify-content: center;
+    width: 10px;
+    height: 18px;    
+}
+
+.icons p {
+    font-weight: 600;
+    margin-right: 100%;
+    margin-left: 10%;
+}
+
+.preco {
+    display: flex;
+    justify-content: center;
+    width: auto;
+    margin-bottom: 6px;
+    font-weight: 600;
+    color: #2c3449;
+}
+
+
+.reserve {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+
+.reserve a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2c3449;
+    width: 80%;
+    height: 35px;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reserve a:hover {
+    background-color: #1b2542;
+}
+

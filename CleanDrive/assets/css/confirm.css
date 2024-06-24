@@ -1,0 +1,12 @@
+.container {
+    width: 100%;
+    height: auto;
+    min-height: 74vh;
+    background-color: #fff;
+}
+
+h2, p {
+    margin-left: 30px;
+    font-weight: 600;
+    color: rgba(44, 52, 73, 1);
+}
