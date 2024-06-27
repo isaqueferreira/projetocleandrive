@@ -1,6 +1,3 @@
-# Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
-# More GitHub Actions for Azure: https://github.com/Azure/actions
-
 name: Build and deploy PHP app to Azure Web App - cleandrive
 
 on:
@@ -32,7 +29,7 @@ jobs:
         run: composer validate --no-check-publish && composer install --prefer-dist --no-progress
 
       - name: Zip artifact for deployment
-        run: zip release.zip ./* -r
+        run: zip -r release.zip .
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
@@ -57,7 +54,10 @@ jobs:
 
       - name: Unzip artifact for deployment
         run: unzip release.zip
-      
+
+      - name: List files in current directory (before deployment)
+        run: ls -la
+
       - name: Login to Azure
         uses: azure/login@v1
         with:
@@ -72,4 +72,6 @@ jobs:
           app-name: 'cleandrive'
           slot-name: 'Production'
           package: .
-          
+
+      - name: List files in current directory (after deployment)
+        run: ls -la
