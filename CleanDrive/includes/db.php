@@ -2,7 +2,7 @@
 $host = 'eletricrental.mysql.database.azure.com';
 $db = 'car-rental';
 $user = 'eletricrental';
-$pass = '@ISAQUELUIZADOUGLAScleandrive';
+$pass = '@ISAQUELUIZAdouglas';
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);
