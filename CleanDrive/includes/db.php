@@ -1,7 +1,7 @@
 <?php
-$host = 'clean-server.mysql.database.azure.com';
-$db = 'clean-server';
-$user = 'nfanrjhnrf';
+$host = 'eletricrental.mysql.database.azure.com';
+$db = 'car-rental';
+$user = 'eletricrental';
 $pass = '@ISAQUELUIZADOUGLAScleandrive';
 
 try {
