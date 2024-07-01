@@ -1,4 +1,3 @@
-
 <?php
 include '../includes/db.php';
 session_start();
@@ -21,25 +20,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['user_id'] = $user['id'];
         header('Location: fleet.php');
+        exit();
     } else {
         $error = 'Invalid login credentials';
     }
 }
 ?>
 <html>
+<head>
+    <title>Login</title>
+    <?php page_specific_css(); ?>
+</head>
+<body>
     <div class="container">
         <?php if (isset($error)): ?>
-            <p><?= $error ?></p>
+            <p><?= htmlspecialchars($error) ?></p>
         <?php endif; ?>
         <div class="formulario">
             <h2>Login</h2>
             <form method="post">
                 <label>Email: <br><input type="email" name="email" placeholder="Digite seu e-mail" required></label><br>
                 <label>Senha: <br><input type="password" name="password" placeholder="Digite sua senha" required></label><br>
-                <button class="botao-login"type="submit">Login</button>
-                <p>Não tem conta? <a href="..\pages\register.php">Cadastre-se</a></p>
+                <button class="botao-login" type="submit">Login</button>
+                <p>Não tem conta? <a href="../pages/register.php">Cadastre-se</a></p>
             </form>
-        </div>   
-    </div>  
-</html>     
+        </div>
+    </div>
 <?php include '../includes/footer.php'; ?>
+</body>
+</html>
