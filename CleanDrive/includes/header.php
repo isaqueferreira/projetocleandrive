@@ -16,7 +16,7 @@ if (isset($_SESSION['user_id'])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Clean Drive </title>
+    <title>Clean Drive</title>
     <meta name="keywords" content="aluguel, carros, carros elétricos">
     <meta name="description" content="CleanDrive - Site">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,7 +26,7 @@ if (isset($_SESSION['user_id'])) {
     <link rel="stylesheet" href="../assets/css/style.css">
     <?php
         if (function_exists('page_specific_css')) {
-        page_specific_css();
+            page_specific_css();
         }
     ?>
 </head>
@@ -42,7 +42,7 @@ if (isset($_SESSION['user_id'])) {
                     <li class="navitens"><a href="#">|</a></li>
                     <?php if ($user): ?>
                         <li class="navitens"><a href="../pages/my_reservations.php">MINHAS RESERVAS</a></li>
-                        <li class="navitens"><a href="../pages/logout.php">OLÁ, <?= strtoupper (htmlspecialchars($user['username'])) ?> !</a></li>
+                        <li class="navitens"><a href="../pages/logout.php">OLÁ, <?= strtoupper(htmlspecialchars($user['username'])) ?> !</a></li>
                     <?php else: ?>
                         <li class="navitens"><a href="../pages/register.php">CADASTRE-SE</a></li>
                         <li class="navitens"><a href="../pages/login.php">LOGIN</a></li>
@@ -52,4 +52,3 @@ if (isset($_SESSION['user_id'])) {
         </div>
     </header>
     <div class="container">
-  
