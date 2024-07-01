@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ($user && password_verify($password, $user['password'])) {
         $_SESSION['user_id'] = $user['id'];
-        header('Location: fleet.php');
+        header('Location: ../pages/fleet.php');
         exit();
     } else {
         $error = 'Invalid login credentials';
